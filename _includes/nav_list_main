@@ -19,14 +19,14 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "web" %}
-                        <li><a href="/categories/web" class="">web({{category[1].size}})</a></li>
+                        <li><a href="/categories/#web" class="">web({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "app" %}
-                        <li><a href="/categories/app" class="">app({{category[1].size}})</a></li>
+                        <li><a href="/categories/#app" class="">app({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -35,21 +35,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding-test" %}
-                        <li><a href="/categories/coding-test" class="">코딩 테스트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#coding-test" class="">코딩 테스트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "it" %}
-                        <li><a href="/categories/it" class="">IT 상식 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#it" class="">IT 상식 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "finance" %}
-                        <li><a href="/categories/finance" class="">금융 상식 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#finance" class="">금융 상식 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
