@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Portfolio"
-    url: https://jmh0434.oopy.io/
   - title: "Category"
     url: /categories/
   - title: "Tag"
