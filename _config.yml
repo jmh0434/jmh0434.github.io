@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "정민혁"
   avatar           : "/assets/images/me.jpg"
-  bio              : "샘플 블로그입니다."
+  bio              : "가천대학교 컴퓨터공학과 재학생입니다"
   location         : "South Korea"
   email            :
   links:
@@ -117,6 +117,8 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/min_hyuk.j/"
+    - title: "Category"
+      url: /categories/
 
 # Site Footer
 footer:
@@ -234,16 +236,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression
@@ -263,10 +265,12 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      #read_time: false
       comments: true
       share: true
       related: true
+      mathjax: true
       show_date: true
+      sidebar_main: true
 date_format: "%Y-%m-%d"
 
