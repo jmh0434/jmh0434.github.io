@@ -30,27 +30,41 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "data" %}
+                <li><a href="/categories/#data" class="">app({{category[1].size}})</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
 
         <span class="nav__sub-title">Study</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "coding-test" %}
-                        <li><a href="/categories/#coding-test" class="">코딩 테스트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#coding-test" class="">코딩 테스트({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "it" %}
-                        <li><a href="/categories/#it" class="">IT 상식 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#it" class="">IT 상식({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "finance" %}
-                        <li><a href="/categories/#finance" class="">금융 상식 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/#algorithm" class="">알고리즘({{category[1].size}})</a></li>
                     {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                {% if category[0] == "finance" %}
+                <li><a href="/categories/#structure" class="">자료구조({{category[1].size}})</a></li>
+                {% endif %}
                 {% endfor %}
             </ul>
       </li>
